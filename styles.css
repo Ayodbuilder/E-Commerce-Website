@@ -564,7 +564,7 @@
   }
     
     
-
+  /* Media queries for large screen device */
   @media screen and (max-width: 799px) {
     .section-p1 {
     padding: 40px 40px;
@@ -584,8 +584,7 @@
         box-shadow: 0 40px 60px rgb(0, 0, 0, 0.02);
         padding: 80px 0 0 10px;
         transition: 0.6s;
-        font-size: 30
-        px;
+        font-size: 30px;
     }
 
     #Navbar.active{
@@ -665,9 +664,80 @@
     }
 
     .sign-up { 
-        width: 67px;
+        width: 70px;
         height: 5vh;
     }
+  }
+
+  /* Media queries for small screen devices */
+  @media screen and (max-width: 477px) {
+    #Header{
+        padding: 10px 30px;
+      }
+
+    #Main{
+        padding: 0 30px;
+        background-position: 55%;
+        height: 60vh;
+      }
+
+      h2{
+        font-size: 30px;
+      }
+
+      h1{
+        font-size: 32px;
+      }
+
+      p{
+        font-size: 12px;
+      }
+    
+      .section-p1{
+        padding: 20px;
+      }
+
+      #Features .featbox{
+        width: 155px;
+        margin: 0 0 15px 0;
+      }
+
+      #Features {
+        justify-content: space-between;
+    }
+
+    #Products1 .Prod{
+        width: 100%;
+    }
+
+    #Banner {
+        height: 40vh;
+    }
+
+    #Newsletter .form {
+        width: 67%;
+    }
+
+    .sign-up { 
+        width: 70px;
+        height: 6vh;
+    }
+    
+    #left-banner .leftbox {
+        height: 40vh;
+    }
+
+    #left-banner .rightbox {
+        margin-top: 20px;
+    }
+
+    #Newsletter .form{
+        width: 100%;
+    }
+
+    footer .copyright{
+        text-align: start;
+      }
   }
 
   
