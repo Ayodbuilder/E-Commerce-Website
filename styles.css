@@ -441,7 +441,7 @@
   #Newsletter p{
     font-size: 12px;
     font-weight: 500;
-    color: black;
+    color: grey;
   }
 
   #Newsletter span{
@@ -458,6 +458,8 @@
     border: 1px solid transparent;
     border-radius: 4px;
     outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   #Newsletter .form{
@@ -465,7 +467,7 @@
     width: 33%;
   }
   
-  .button{
+  .sign-up{
     display: inline-block;
     padding: 5px 8px;
     background-color: blue;
@@ -480,12 +482,66 @@
     width: 70px;
     height: 8vh;
     align-items: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
-  .button:hover{
+  .sign-up:hover{
     background-color: green;
     color: white;
   }
+
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer .coln{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  footer .logo{
+    margin-bottom: 20px;
+  }
+
+  footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+     color: black;
+  }
+
+  footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+  }
+
+  footer a{
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: grey;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: red;
+    transition: 0.2s ease;
+  }
+
+  footer .follow{
+    margin-top: 20px;
+  }
+
+  footer .follow i{
+    color: red;
+    padding-right: 12px;
+    cursor: pointer;
+  }
+    
+    
 
   @media screen and (max-width: 799px){
     #Navbar{
@@ -502,6 +558,8 @@
         box-shadow: 0 40px 60px rgb(0, 0, 0, 0.02);
         padding: 80px 0 0 10px;
         transform: 0.2s;
+        font-size: 30
+        px;
     }
 
     #Navbar.active{
@@ -521,6 +579,18 @@
 
     #Navbar li{
         margin-bottom: 25px;
+    }
+
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: black;
+        font-size: 24px;
+    }
+    
+    #lg-cart {
+        display: none;
     }
   }
 
