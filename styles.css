@@ -535,10 +535,28 @@
     margin-top: 20px;
   }
 
-  footer .follow i{
+  footer .follow i:hover{
     color: red;
+  }
+
+  footer .follow i{
+    color: blue;
     padding-right: 12px;
     cursor: pointer;
+  }
+
+  footer .coln-install .row img{
+    border: 1px solid red;
+    border-radius: 6px;
+  }
+
+  footer .coln-install img{
+    margin: 10px 0 15px 0;
+  }
+
+  footer .copyright{
+    width: 100%;
+    text-align: center;
   }
     
     
