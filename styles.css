@@ -61,6 +61,11 @@
     left: 15px;
   }
 
+  #mobile{
+    display: none;
+    align-items: center;
+  }
+
   /* Main home page styling */
   #Main{
     background-image: url(Images/hero4.png);
@@ -318,13 +323,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
+    align-items: flex-start;
     background-image: url(Images/banner/b17.jpg);
-    max-width: 50%;
+    min-width: 580px;
     height: 50vh;
     background-size: cover;
     background-position: center;
+    padding: 3%;
+  }
+
+  #left-banner .rightbox{
+    background-image: url(Images/banner/b10.jpg);
   }
 
   #left-banner{
@@ -332,5 +341,191 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  #left-banner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  #left-banner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  #left-banner span{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+
+ button{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  #left-banner .leftbox:hover button{
+    background-color: bisque;
+    color: red;
+    border: 1px solid bisque;
+  }
+
+  #txtbanner .leftbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(Images/banner/b7.jpg);
+    min-width: 400px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  #txtbanner .box2{
+    background-image: url(Images/banner/b4.jpg);
+  }
+
+  #txtbanner .box3{
+    background-image: url(Images/banner/b18.jpg);
+  }
+
+  #txtbanner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  #txtbanner h2{
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+  }
+
+  #txtbanner h3{
+    color: red;
+    font-weight: 800;
+    font-size: 15px;
+  }
+
+  #Newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(Images/banner/b14.png);
+    background-repeat: no-repeat;
+    background-color: bisque;
+    background-position: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  #Newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  #Newsletter p{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+  }
+
+  #Newsletter span{
+    font-size: 12px;
+    font-weight: 500;
+    color: blue;
+  }
+
+  #Newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  #Newsletter .form{
+    display: flex;
+    width: 33%;
+  }
+  
+  .button{
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 12px;
+    font-weight: 600;
+    width: 70px;
+    height: 8vh;
+    align-items: center;
+  }
+
+  .button:hover{
+    background-color: green;
+    color: white;
+  }
+
+  @media screen and (max-width: 799px){
+    #Navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: bisque;
+        box-shadow: 0 40px 60px rgb(0, 0, 0, 0.02);
+        padding: 80px 0 0 10px;
+        transform: 0.2s;
+    }
+
+    #Navbar.active{
+        right: 0px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+      }
+
+    #mobile i{
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+      }
+
+    #Navbar li{
+        margin-bottom: 25px;
+    }
+  }
+
+  
+    
+  
 
 
