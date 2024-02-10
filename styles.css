@@ -561,9 +561,58 @@
   footer .copyright{
     width: 100%;
     text-align: center;
+    font-size: 8px;
   }
     
+  /* styling for my shop page */
+
+  #Shop-header{
+    background-image: url(Images/banner/b1.jpg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+  }
     
+  #Shop-header h2,
+   #Shop-header p{
+    color: white;
+    justify-content: center;
+  }
+
+  #Pagination{
+    text-align: center;
+  }
+
+  #Pagination a{
+    text-decoration: none;
+    background-color: bisque;
+    color: red;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+
+  #Pagination a i{
+    font-size: 18px;
+    font-weight: 600px;
+  }
+
+
+
+
+
+
+
+
+
+
+
   /* Media queries for large screen device */
   @media screen and (max-width: 799px) {
     .section-p1 {
